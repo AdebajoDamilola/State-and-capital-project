@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>States</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: Roboto;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column1 {
+            flex: 40%;
+            height: 100%;
+            min-height: 100vh;
+        }
+
+        .column2 {
+            flex: 60%;
+        }
+
+        #nigeria {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+            justify-content: center;
+            display: flex;
+        }
+
+        #lagos {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+            justify-content: center;
+            padding-left: 40px;
+
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .abia {
+            padding-right: 16px;
+            width: 50%;
+            text-align: right;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+        }
+
+        .uma {
+            padding-left: 16px;
+            width: 50%;
+            text-align: left;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+        }
+
+        .abi {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87);
+            cursor: pointer;
+        }
+
+        .umau {
+            cursor: pointer;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87)
+        }
+
+        #ikeja {
+            padding-left: 40px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+        }
+
+        #cities {
+            padding-left: 40px;
+            margin-bottom: 0px;
+        }
+
+        .city1 {
+
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 33.333%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+
+
+        }
+
+        .city {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 40px;
+
+        }
+
+        .localgov {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 40px;
+        }
+
+        .localgovs {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 33.333%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 42px;
+
+        }
+
+        #lag {
+            margin-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        #localG {
+            padding-left: 40px;
+            margin-bottom: 0px;
+        }
+
+        .mousehover:hover {
+
+            background-color: rgba(40, 68, 33, 0.11);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column1" id="column" style="background-color:#C0E8B6 ;">
+            <div id="nigeria">
+                <h1> Nigerian States</h1>
+                
+            </div>
+            <!--
+            <div class="mousehover">
+                <div class="first">
+                    <div onclick=func id="abia"><a class="abi" href="">Abia</a> </div>
+                    <div id="uma"><a class="umau" href="">Umuahia</a> </div>
+                </div>
+            </div>
+
+            
+                <div class="first">
+                    <div class="abia"> <a class="abi" href="">Abia</a> </div>
+                    <div class="uma"><a class="umau" href="">Umuahia</a> </div>
+                </div>
+            </div>
+-->
+        </div>
+        <div class="column2" style="background-color: #ffff;">
+            <div id="lagos">
+                <h1 id="lag"></h1>
+            </div>
+            <div>
+                <a id="ikeja"></a>
+            </div>
+            <div>
+                <h2 id="cities">Cities</h2>
+            </div>
+            <div class="city">
+            
+                <!-- <div class="city1"><a> Agege</a></div>
+                <div class="city1"><a> Ikeja</a></div>
+                <div class="city1"><a> Ogudu</a></div>
+                <div class="city1"><a> Og</a></div>
+                <div class="city1"><a> Ag</a></div>
+                <div class="city1"><a> Ike</a></div>
+                <div class="city1"><a> Ogu</a></div>
+                <div class="city1"><a> Ogud</a></div>
+                <div class="city1"><a> Aege</a></div>
+                <div class="city1"><a> Ieja</a></div>
+                <div class="city1"><a> Agege</a></div>
+                <div class="city1"><a> Ikeja</a></div>
+                <div class="city1"><a> Ogudu</a></div>
+                <div class="city1"><a> Og</a></div>
+                <div class="city1"><a> Ag</a></div>
+                <div class="city1"><a> Ike</a></div>
+                <div class="city1"><a> Ogu</a></div>
+                <div class="city1"><a> Ogud</a></div>
+                <div class="city1"><a> Aege</a></div>
+                <div class="city1"><a> Ieja</a></div> -->
+            </div>
+            <div>
+                <h2 id="localG">Local Governments</h2>
+            </div>
+            <div class="localgov">
+                <!-- <div class="localgovs"><a> Oshodi</a></div>
+                <div class="localgovs"><a> Ikeja</a></div>
+                <div class="localgovs"><a> Alimosho</a></div>
+                <div class="localgovs"><a> Mainland</a></div>
+                <div class="localgovs"><a> Epe</a></div>
+                <div class="localgovs"><a> Agege</a></div>
+                <div class="localgovs"><a> Sango-ota</a></div>
+                <div class="localgovs"><a> Ojota</a></div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    //register event
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('http://locationsng-api.herokuapp.com/api/v1/states')
+            .then(
+                function (response) {
+                    if (response.status !== 200) { //if not  successful do below
+                        console.log('Looks like there was a problem. Status Code: ' +
+                            response.status);
+
+                    }
+                    // Examine the text in the response
+                    response.json().then(function (data) {
+                        if (Array.isArray(data)) { //check if data response is an array then proceed with operation
+                            for (i = 0; i < data.length; i++) {
+                                create(data[i])
+                          
+                            }
+                            getStateDetails(data[0])
+                        }
+
+
+
+                    });
+                }
+            )
+            .catch(function (err) {
+                let error = new Error(err)
+                console.log('Fetch Error :-S', error);
+            });
+    });
+
+
+    
+    /*
+    * @param data: object {name, capital}
+    */
+    function getStateDetails(data) {
+        var stateName = document.querySelector("#lag")
+        stateName.textContent = data.name
+
+        var CapitalName = document.querySelector("#ikeja")
+        CapitalName.textContent = data.capital
+        var details = document.querySelector(".city1")
+        
+        
+
+
+
+        //fetch state details
+        fetch(`http://locationsng-api.herokuapp.com/api/v1/states/${data.name}/details`)
+            .then(
+                function (response) {
+                    if (response.status !== 200) {
+                        console.log('Looks like there was a problem. Status Code: ' +
+                            response.status);
+                        return;
+                    }
+                    // Examine the text in the response
+                    response.json().then(function (resp) {
+                        var cities= resp.cities
+                        for  (i = 0; i < cities.length; i++) {
+                            createCities(cities[i])
+                        }
+                            var localg = resp.lgas
+                            for (i = 0; i < localg.length; i++) {
+                                createlocalgov(localg[i])
+                            }
+
+                    });
+
+                }
+            )
+            .catch(function (err) {
+                console.log('Fetch Error :-S', err);
+            });
+    };
+    function createCities(city) {
+        var city1Textnode = document.createTextNode(city)
+        var cityATag = document.createElement("a")
+        var citiesDivTag = document.createElement("div")
+        var parentcityDivTag =document.querySelector(".city")
+        
+        cityATag.appendChild(city1Textnode)
+        citiesDivTag.appendChild(cityATag)
+
+        parentcityDivTag.appendChild(citiesDivTag)
+
+        citiesDivTag.classList.add('city1')
+    }
+
+    function createlocalgov(local){
+        var localgovsTextnode = document.createTextNode(local)
+        var localgovATag = document.createElement("a")
+        var localgovDivTag = document.createElement("div")
+        var parentlocalDivTag = document.querySelector(".localgov")
+
+        localgovATag.appendChild(localgovsTextnode)
+        localgovDivTag.appendChild(localgovATag)
+
+        parentlocalDivTag.appendChild(localgovDivTag)
+
+        localgovDivTag.classList.add("localgovs")
+    }
+
+    // create elements
+    function create(data) {
+        var stateTextNode = document.createTextNode(data.name)
+        var stateATag = document.createElement("a")
+        var stateDivTag = document.createElement("div")
+        stateATag.appendChild(stateTextNode)
+        stateDivTag.appendChild(stateATag)
+
+        var capitalTextNode = document.createTextNode(data.capital)
+        var capitalATag = document.createElement("a")
+        var capitalDivTag = document.createElement("div")
+        capitalATag.appendChild(capitalTextNode)
+        capitalDivTag.appendChild(capitalATag)
+
+        var stateCapitalDiv = document.createElement("div")
+        stateCapitalDiv.appendChild(stateDivTag)
+        stateCapitalDiv.appendChild(capitalDivTag)
+
+
+        var parentDiv = document.createElement("div")
+        parentDiv.appendChild(stateCapitalDiv)
+
+        stateATag.classList.add('abi')
+        capitalATag.classList.add('umau')
+
+        stateDivTag.classList.add('abia')
+        capitalDivTag.classList.add('uma')
+
+        stateCapitalDiv.classList.add('first')
+
+        parentDiv.classList.add('mousehover')
+
+        var selectDiv = document.querySelector('#column')
+        selectDiv.appendChild(parentDiv)
+
+        parentDiv.addEventListener("click", function () {
+            getStateDetails(data)
+        })
+    }
+</script>
+
+</html>
